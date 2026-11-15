@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/tienda_mejoras.gd" id="1"]
+
+[node name="Tienda" type="CanvasLayer"]
+visible = false
+script = ExtResource("1")
+
+[node name="Fondo" type="PanelContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -260.0
+offset_top = -170.0
+offset_right = 260.0
+offset_bottom = 170.0
+
+[node name="VBox" type="VBoxContainer" parent="Fondo"]
+
+[node name="Titulo" type="Label" parent="Fondo/VBox"]
+text = "Tienda de mejoras"
+
+[node name="EtiquetaCreditos" type="Label" parent="Fondo/VBox"]
+text = "Créditos: 0"
+
+[node name="FilaDano" type="HBoxContainer" parent="Fondo/VBox"]
+
+[node name="EtiquetaNombreDano" type="Label" parent="Fondo/VBox/FilaDano"]
+size_flags_horizontal = 3
+text = "Cañón de plasma (+5 daño)"
+
+[node name="EtiquetaNivelDano" type="Label" parent="Fondo/VBox/FilaDano"]
+text = "Nv. 0 / 5"
+
+[node name="EtiquetaCostoDano" type="Label" parent="Fondo/VBox/FilaDano"]
+text = "Costo: 50 créditos"
+
+[node name="BotonComprarDano" type="Button" parent="Fondo/VBox/FilaDano"]
+text = "Comprar"
+
+[node name="FilaSalud" type="HBoxContainer" parent="Fondo/VBox"]
+
+[node name="EtiquetaNombreSalud" type="Label" parent="Fondo/VBox/FilaSalud"]
+size_flags_horizontal = 3
+text = "Armadura de titanio (+20 salud)"
+
+[node name="EtiquetaNivelSalud" type="Label" parent="Fondo/VBox/FilaSalud"]
+text = "Nv. 0 / 5"
+
+[node name="EtiquetaCostoSalud" type="Label" parent="Fondo/VBox/FilaSalud"]
+text = "Costo: 50 créditos"
+
+[node name="BotonComprarSalud" type="Button" parent="Fondo/VBox/FilaSalud"]
+text = "Comprar"
+
+[node name="FilaVelocidad" type="HBoxContainer" parent="Fondo/VBox"]
+
+[node name="EtiquetaNombreVelocidad" type="Label" parent="Fondo/VBox/FilaVelocidad"]
+size_flags_horizontal = 3
+text = "Servomotores (+0.4 velocidad)"
+
+[node name="EtiquetaNivelVelocidad" type="Label" parent="Fondo/VBox/FilaVelocidad"]
+text = "Nv. 0 / 5"
+
+[node name="EtiquetaCostoVelocidad" type="Label" parent="Fondo/VBox/FilaVelocidad"]
+text = "Costo: 40 créditos"
+
+[node name="BotonComprarVelocidad" type="Button" parent="Fondo/VBox/FilaVelocidad"]
+text = "Comprar"
+
+[node name="BotonCerrar" type="Button" parent="Fondo/VBox"]
+text = "Cerrar (T)"
